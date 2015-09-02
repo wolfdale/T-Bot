@@ -14,7 +14,7 @@ filename=open("tweet.txt",'r')
 f=filename.readlines()
 filename.close()
 for line in f:
-    print "Posting Lyrics Now"
+    print "Posting Now"
     api.update_status(status=line)
     print "Entering Sleep Mode"
     sleep(840)
