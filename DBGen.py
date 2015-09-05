@@ -1,4 +1,5 @@
 #create Handle DB for Following
+#Make Sure that you can make caal 200 times per day 
 from time import sleep
 import tweepy
 
@@ -11,7 +12,7 @@ auth = tweepy.OAuthHandler(ckey,csecret) #Authenticating with twitter
 auth.set_access_token(atoken,asecret)    #Access tokens
 
 api = tweepy.API(auth)
-print api.rate_limit_status()
+
 name = raw_input('Enter name of text file: ')+'.txt'
 seed_user='  ' # Enter Seed for creating a DB of twitter Handles
 for counter in range(1,100000):
